@@ -1,23 +1,22 @@
 import { useEffect, useState } from "react";
 
-function LetterA() {
-  const [letterA, setLetterA] = useState([]);
+function Random() {
+  const [random, setRandom] = useState([]);
 
   useEffect(() => {
-    getLetterA();
+    getRandom();
   }, []);
 
-  const getLetterA = async () => {
-    const apiUrl = "https://thecocktaildb.com/api/json/v1/1/search.php?f=a";
+  const getRandom = async () => {
+    const apiUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
     const api = await fetch(`${apiUrl}`);
     const data = await api.json();
-    console.log(data);
-    setLetterA(data.drinks);
+    setRandom(data.drinks);
   };
 
   return (
-    <div className="letterA-container">
-      {letterA.map((drink) => {
+    <div className="random-container">
+      {random.map((drink) => {
         return (
           <article key={drink.idDrink} className="cocktail-card">
             <div className="letterA-item-image">
@@ -31,4 +30,4 @@ function LetterA() {
   );
 }
 
-export default LetterA;
+export default Random;
