@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./letterA.css";
 
 function LetterA() {
   const [letterA, setLetterA] = useState([]);
@@ -20,10 +21,12 @@ function LetterA() {
       {letterA.map((drink) => {
         return (
           <article key={drink.idDrink} className="cocktail-card">
+            <div className="cocktail-name">
+              <h3>{drink.strDrink}</h3>
+            </div>
             <div className="letterA-item-image">
               <img src={drink.strDrinkThumb} alt={drink.strDrink}></img>
             </div>
-            <h3>{drink.strDrink}</h3>
           </article>
         );
       })}

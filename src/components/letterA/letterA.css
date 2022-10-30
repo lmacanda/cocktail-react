@@ -1,0 +1,23 @@
+.letterA-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.letterA-item-image img {
+  width: 75%;
+}
+
+.cocktail-name {
+  position: relative;
+  top: 15%;
+  bottom: 20%;
+  z-index: 9;
+  background-size: cover;
+  width: fit-content;
+  height: 20px;
+}
+
+h3 {
+  background-color: pink;
+}

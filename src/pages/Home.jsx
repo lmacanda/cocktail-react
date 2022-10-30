@@ -1,6 +1,6 @@
 import React from "react";
-import LetterA from "../components/LetterA";
-import Random from "../components/Random";
+import LetterA from "../components/letterA/LetterA";
+import Random from "../components/random/Random";
 
 function Home() {
   return (

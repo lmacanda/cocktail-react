@@ -1,0 +1,37 @@
+.random-container {
+  margin: 20px 200px 20px 200px;
+}
+
+.random-card {
+  position: relative;
+  margin: 0 auto;
+}
+
+.random-recipe {
+  width: 100%;
+  margin: 32px auto;
+  background-color: blanchedalmond;
+}
+
+.random-item-image {
+  width: 25%;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.col-2 {
+  gap: 140px;
+}
+
+.ingredients {
+  font: 1em;
+}
+
+.instructions {
+  margin-top: 50px;
+}
